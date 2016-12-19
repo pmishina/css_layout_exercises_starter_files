@@ -1,1 +1,70 @@
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
+/*this is the gray bar*/
+nav {
+  height: 60px;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+}
+
+nav .icon {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+/*this made the links horizontal - why?*/
+nav li {
+  display: inline-block;
+}
+
+nav li::after {
+  content: " | ";
+}
+
+body {
+  background-image: url("../images/outerspace_landscape.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding: 90px;
+}
+
+.greenbox {
+  width: 600px;
+  height: 300px;
+  border: 10px dotted green;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.spacecat, .spacedog {
+  width: 200px;
+  position: absolute;
+}
+
+.spacecat {
+  top: -100px;
+  left: -100px;
+}
+
+.spacedog {
+  right: -100px;
+  bottom: -100px;
+}
